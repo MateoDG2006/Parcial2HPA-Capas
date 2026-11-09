@@ -78,7 +78,8 @@ namespace Parcial2HPACapas.Vista.Formularios
             }
 
             hijo.MdiParent = this;
-            hijo.WindowState = FormWindowState.Maximized;
+            hijo.StartPosition = FormStartPosition.Manual;
+            hijo.Location = new System.Drawing.Point(12, 12);
             hijo.Show();
             lblTituloModulo.Text = titulo;
         }

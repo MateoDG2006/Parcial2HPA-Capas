@@ -20,10 +20,12 @@ namespace Parcial2HPACapas.Vista.Formularios
             this.pnlCabecera = new System.Windows.Forms.Panel();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.pnlContenidoGrid = new System.Windows.Forms.Panel();
             this.dgvPedidos = new System.Windows.Forms.DataGridView();
             this.pnlPie = new System.Windows.Forms.Panel();
             this.lblTotal = new System.Windows.Forms.Label();
             this.pnlCabecera.SuspendLayout();
+            this.pnlContenidoGrid.SuspendLayout();
             this.pnlPie.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             this.SuspendLayout();
@@ -67,22 +69,34 @@ namespace Parcial2HPACapas.Vista.Formularios
             this.lblTitulo.Text = "Listado de Pedidos";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             //
+            // pnlContenidoGrid
+            //
+            this.pnlContenidoGrid.BackColor = System.Drawing.Color.White;
+            this.pnlContenidoGrid.Controls.Add(this.dgvPedidos);
+            this.pnlContenidoGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenidoGrid.Location = new System.Drawing.Point(0, 50);
+            this.pnlContenidoGrid.Name = "pnlContenidoGrid";
+            this.pnlContenidoGrid.Padding = new System.Windows.Forms.Padding(14, 8, 14, 8);
+            this.pnlContenidoGrid.Size = new System.Drawing.Size(900, 500);
+            this.pnlContenidoGrid.TabIndex = 1;
+            //
             // dgvPedidos
             //
             this.dgvPedidos.AllowUserToAddRows = false;
             this.dgvPedidos.AllowUserToDeleteRows = false;
             this.dgvPedidos.AllowUserToResizeRows = false;
+            this.dgvPedidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPedidos.BackgroundColor = System.Drawing.Color.White;
-            this.dgvPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPedidos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPedidos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPedidos.Location = new System.Drawing.Point(0, 50);
+            this.dgvPedidos.Location = new System.Drawing.Point(14, 8);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.ReadOnly = true;
             this.dgvPedidos.RowHeadersVisible = false;
             this.dgvPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPedidos.Size = new System.Drawing.Size(900, 500);
-            this.dgvPedidos.TabIndex = 1;
+            this.dgvPedidos.Size = new System.Drawing.Size(872, 484);
+            this.dgvPedidos.TabIndex = 0;
             //
             // pnlPie
             //
@@ -113,14 +127,15 @@ namespace Parcial2HPACapas.Vista.Formularios
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 580);
-            this.Controls.Add(this.dgvPedidos);
+            this.Controls.Add(this.pnlContenidoGrid);
             this.Controls.Add(this.pnlPie);
             this.Controls.Add(this.pnlCabecera);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             this.Name = "FrmPedidos";
             this.Text = "Pedidos";
             this.Load += new System.EventHandler(this.FrmPedidos_Load);
             this.pnlCabecera.ResumeLayout(false);
+            this.pnlContenidoGrid.ResumeLayout(false);
             this.pnlPie.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             this.ResumeLayout(false);
@@ -131,6 +146,7 @@ namespace Parcial2HPACapas.Vista.Formularios
         private System.Windows.Forms.Panel pnlCabecera;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Panel pnlContenidoGrid;
         private System.Windows.Forms.DataGridView dgvPedidos;
         private System.Windows.Forms.Panel pnlPie;
         private System.Windows.Forms.Label lblTotal;
