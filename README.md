@@ -164,9 +164,6 @@ privilegio posible.
 
 ## Resultados (capturas)
 
-> Reemplaza estas imágenes por capturas de tu aplicación en ejecución
-> (colócalas en [`Capturas/`](Capturas) con estos nombres).
-
 ### Inicio de sesión
 ![Login](Capturas/01_login.png)
 
